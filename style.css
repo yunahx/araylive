@@ -1,0 +1,306 @@
+body { background-color:#010101; background-image: url('https://i.ibb.co/ncHz08R/Accurate-Nimble-Bighornedsheep-mobile.gif'); }
+
+@font-face {font-family: "flower for rosalline";src: url('https://dl.dropbox.com/s/ahruzjq78qen0x5/FlowerForRosalline.woff?dl=0');}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black; 
+  border-radius: 20px;
+  border: 3px solid blak;
+}
+
+.relationships {
+  margin:20px auto;
+  max-width: 550px;
+  line-height: 100%;
+  margin-top: 150px;
+}
+.relationships a {
+  text-decoration:none;
+}
+.rs-cate {
+  height: 150px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border: 5px solid #111;
+}
+.rs-cate div {
+  position:absolute;
+  top:0;right:0;bottom:0;left:0;
+  filter:grayscale(1) contrast(1.4);
+  background-size:cover;
+  background-position:center;
+}
+.rs-cate:before {
+  background: #ec625f;
+  position:absolute;
+  top:0;right:0;bottom:0;left:0;
+  z-index:2;
+  content:"";
+  opacity:.5;
+}
+.relationships.solaris .rs-cate:before {
+  background: #000;
+}
+.relationships.notos .rs-cate:before {
+  background: #ec625f;
+}
+.relationships.praetores .rs-cate:before {
+  background: #E66A63;
+}
+.relationships.noctalis .rs-cate:before {
+  background: #7A70BF;
+}
+.rs-cate span {
+  position:relative;
+  z-index:3;
+  font-family: "flower for rosalline";
+  color: #fff;
+  font-size: 50px;
+}
+.rs-links {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.rs-lien {
+  background: #313131;
+  border: 5px solid #111;
+  color: #eee;
+  margin: 20px 0 0;
+  display:flex;
+  flex-direction:column;
+  width: 250px;
+}
+.lk-name {
+  background-color: #000;
+  background-image: url(-);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-family: Playfair display;
+  font-size: 14px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 5px solid #111;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
+.lk-name b {
+  color: #ec625f;
+  font-weight:normal;
+}
+.relationships.solaris .lk-name b {
+  color: #ec625f;
+}
+.relationships.notos .lk-name b {
+  color: #66AAB0;
+}
+.relationships.praetores .lk-name b {
+  color: #E66A63;
+}
+.relationships.noctalis .lk-name b {
+  color: #7A70BF;
+}
+.lk-body {
+  position:relative;
+  height: 350px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  overflow:hidden;
+}
+.lkavatar {
+  position:absolute;
+  left:0;right:0;bottom:0;top:0;
+  background-position:center;
+  background-size:cover;
+  transition: all 0.6s ease;
+}
+.lk-body:hover .lkavatar {
+  transform: scale(1.3);
+  filter: grayscale(.8) blur(2px)
+}
+.lk-hide {
+  position:absolute;
+  top: 20px; right:20px; bottom: 20px; left:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+.lk-body:hover .lk-hide{
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.lk-infos {
+  background: rgba(0,0,0,.8);
+  display:flex;
+  flex-wrap:wrap;
+  border: 1px solid #000;
+  width: calc(100% - 2px);
+}
+.lk-infos span {
+  flex-grow:1;
+  padding: 5px 10px;
+  font-family: Playfair Display;
+  color: #ec625f;
+  font-style:italic;
+  font-size: 13px;
+  background: #111;
+  margin: 5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  border-radius: 3px;
+  border: 1px solid #000;
+  max-height: 20px;
+}
+.lk-infos span:last-child {
+  margin-top:0;
+}
+.lk-desc {
+  background: #111;
+  border: 20px solid transparent;
+  padding-right: 5px;
+  overflow:auto;
+  text-align:justify;
+  font-family: Karla;
+  font-size: 12px;
+  width: calc(100% - 45px);
+  height: 100%;
+}
+.lk-desc::-webkit-scrollbar {width: 4px;} .lk-desc::-webkit-scrollbar-thumb {background: #ec625f;border-radius: 4px; -webkit-box-shadow: none !important;} .lk-desc::-webkit-scrollbar-track {background: rgba(0,0,0,0);-webkit-box-shadow: none !important;}
+.lkicon {
+  background: rgba(0,0,0,.8);
+  display:flex;
+  border: 1px solid #000;
+  align-items:center;
+  justify-content:center;
+  width: calc(100% - 2px);
+}
+.lkicon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px 20px 0 0; 
+  background:#transparent;
+  padding: 2px;
+  border: 0px solid #111;
+}
+.lk-links {
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  border-top: 5px solid #111;
+  height: 40px;
+  position:relative;
+}
+.lk-links a {
+  color: #ec625f;
+  text-shadow: -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 1px 1px 0 #111;
+  font-weight:bold;
+  transition: all 0.5s ease;
+  margin: 0 5px;
+}
+.lk-links a:hover {
+  transition: all 0.5s ease;
+  color: #eee !important;
+}
+.relationships.solaris .lk-links a {
+  color: #ec625f;
+}
+.relationships.notos .lk-links a {
+  color: #66AAB0;
+}
+.relationships.praetores .lk-links a {
+  color: #E66A63;
+}
+.relationships.noctalis .lk-links a {
+  color: #7A70BF;
+}
+.linkf {
+  flex:1;
+  background-color: #000;
+  background-image: url('-');
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 24px;
+  border-right: 2.5px solid #111;
+}
+.linkrp {
+  flex:1;
+  background: #ec625f;
+  border-left: 2.5px solid #111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: #111;
+  font-size: 24px;
+}
+.relationships.solaris .linkrp {
+  background: #ec625f;
+}
+.relationships.notos .linkrp {
+  background: #66AAB0;
+}
+.relationships.praetores .linkrp {
+  background: #E66A63;
+}
+.relationships.noctalis .linkrp {
+  background: #7A70BF;
+}
+.linkrp div {
+  background-color: #000;
+  background-image: url('-');
+  position:absolute;
+  left:0; top:0; right:0; bottom:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  font-family: Playfair display;
+  font-size: 14px;
+  letter-spacing: 2px;
+  width: 1px;
+  height:1px;
+  opacity:0;
+  transition: all 0.6s ease;
+  border-bottom-right-radius:50px;
+  left: -10px;
+  top: -10px;
+  padding: 0 20px;
+}
+.linkrp div a {
+  display:none;
+}
+.linkrp:hover div a {
+  display:flex;
+}
+.linkrp:hover div {
+  opacity:1;
+  width: calc(100% - 40px);
+  height: 100%;
+  transition: all 0.4s ease;
+  border-radius: 0px;
+  left:0;
+  top:0;
+}
